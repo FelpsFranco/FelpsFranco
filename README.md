@@ -31,14 +31,6 @@
   </body>
   <script>
       import VueParticle from "vue-particlejs";
-      export default {
-        name: "HelloWorld",
-        props: {
-          msg: String,
-        },
-        components: {
-          VueParticle,
-        },
         data() {
           return {
             particleConfig: {
@@ -105,25 +97,24 @@
           };
         },
       };
-      </script>
-      
-      <!-- Add "scoped" attribute to limit CSS to this component only -->
+  </script>
   <style scoped>
       #demo {
         width: 100%;
         height: 30vh;
         background: url("") black;
       }
-      
-      #inner-demo {
-        width: 100%;
-        height: 0%;
-        display: flex;
-        align-items: left;
-        justify-content: left;
-        color: black;
-        font-size: 1em;
-      }
+  </style>    
+  <style scoped>            
+       #inner-demo {
+          width: 100%;
+          height: 0%;
+          display: flex;
+          align-items: left;
+          justify-content: left;
+          color: black;
+          font-size: 1em;
+       }
       #inner-demo h1 {
         position: relative;
         left: 1em;
